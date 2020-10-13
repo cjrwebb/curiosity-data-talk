@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Curiosity driven, accessible tools for democratising data: social work and children’s services</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr Calum Webb" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/pymjs/pym.v1.js"></script>
+    <script src="libs/widgetframe-binding/widgetframe.js"></script>
+    <script src="libs/viz/viz.js"></script>
+    <link href="libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+    <script src="libs/grViz-binding/grViz.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: bottom
+background-image: url(images/cwip_illustration4x3.png)
+background-size: contain
+
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(images/uni-sheffield.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+
+
+
+## .inverse[.white[Curiosity driven, accessible tools for democratising data: social work and children’s services]]
+
+### .inverse[.white[Dr. Calum Webb]]
+.white[The University of Sheffield]
+
+
+---
+
+# Contents
+
+### - Lorem ipsum
+
+
+---
+
+### Children in the poorest 10 per cent of neighbourhoods are&lt;br&gt;more than 10 times as likely to be living in care than children in the least poor 10 per cent of neighbourhoods.
+
+&lt;div class="figure"&gt;
+<div id="htmlwidget-f23269997ee9a5b9229a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f23269997ee9a5b9229a">{"x":{"url":"curiosity-driven-shiny_files/figure-html//widgets/widget_bywaters2020child.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+&lt;p class="caption"&gt;Data from Bywaters, et al. &lt;a href = https://pure.hud.ac.uk/en/publications/the-child-welfare-inequalities-project-final-report&gt;2020&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+### There are significant ethnic inequalities in intervention rates,&lt;br&gt;but these are intersectional, where many groups are under-represented in the poorest neighbourhoods and over-represented in the most affluent.
+
+&lt;center&gt;
+
+&lt;div class="figure"&gt;
+&lt;img src="images/cla_infographic_eth.png" alt="What would the ethnic profile of 220 children looked after look like in differently deprived neighbourhoods if all neighbourhoods had identical sized ethnic populations? From Webb, et al. &amp;lt;a href = https://doi.org/10.1016/j.childyouth.2020.105299&amp;gt;2020&amp;lt;/a&amp;gt;" width="600" height="300" /&gt;
+&lt;p class="caption"&gt;What would the ethnic profile of 220 children looked after look like in differently deprived neighbourhoods if all neighbourhoods had identical sized ethnic populations? From Webb, et al. &lt;a href = https://doi.org/10.1016/j.childyouth.2020.105299&gt;2020&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/center&gt;
+
+
+---
+
+### The most deprived local authorities have seen a much larger&lt;br&gt;reduction in their non-safeguarding, non-children looked after expenditure as a result of austerity.
+
+&lt;div class="figure"&gt;
+<div id="htmlwidget-7c2f5e38a9070835128a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7c2f5e38a9070835128a">{"x":{"url":"curiosity-driven-shiny_files/figure-html//widgets/widget_spending_plot.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+&lt;p class="caption"&gt;Data from &lt;a href=https://www.gov.uk/government/collections/section-251-materials&gt;S251 Outturns, DfE 2011-2020&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+## We have the research, why build an app?
+
+### Some typical reponses from people that can turn that research into change that affects peoples' lives:
+
+&lt;p style="text-align:right";&gt;
+&lt;svg style="height:30;fill:F8C500;" viewBox="0 0 512 512"&gt;&lt;path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/&gt;&lt;/svg&gt;
+&lt;/p&gt;
+
+--
+
+&gt; ####"But that's not happening here. We're an outlier."
+
+--
+
+&gt; ####"I believe it, but we can't do anything about it if we can't evidence it to our DCS"
+
+--
+
+&gt; ####"I really liked your paper/tweet/blog about [...] - could you get me the data about [local authority] specifically?"
+
+---
+
+class: hide_logo, center, middle
+background-image: url(images/web_copy_swings_photo.png)
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+# .white[The Child Welfare Inequalities Project App (CWIP App)]
+## .white.bg-yellow[[www.cwip-app.co.uk](www.cwip-app.co.uk)]
+
+???
+
+Live demonstration
+
+---
+
+# Democratising data storytelling
+
+&lt;br&gt;
+
+&lt;p style="text-align:right";&gt;
+&lt;svg style="height:30;fill:F8C500;" viewBox="0 0 512 512"&gt;&lt;path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/&gt;&lt;/svg&gt;
+&lt;/p&gt;
+
+
+&gt; # &lt;span style="color:black"&gt;"the ability to take data — to be able to understand it, to process it, to extract value from it, to visualise it, to communicate it"&lt;/span&gt;
+
+.right[Prof Hal Varian, Chief Economist at Google &amp; Emeritus Professor at Berkeley&lt;/b&gt;]
+
+---
+
+# Why does everyone need access to data storytelling?
+
+- Stories that include a data narrative are **powerful rhetorical tools**.
+
+- There is **inequitable access** to data and the skills required to turn raw data into visualisations, models, and interfaces that tell data stories.
+
+- This means that many data stories go unheard or, at best, are **filtered through another actor** (e.g. a research institute, news provider). This kind of exclusion is usually associated with other kinds of exclusion.
+
+- 'One dataset, many analysts': it's **good for science and society** (Silberzahn, et al. 2018)
+
+
+???
+
+Stories that include a data narrative are powerful rhetorical tools, by which I mean they are very good for convincing people of what the writer wants to convince them of, because the numbers in the story often make the story sound much more legitimate - even if the numbers and their interpretations are wrong. In fact, it's quite common for people to dismiss any truth in a story because it's not 'backed up by numbers.' In a fight between a 'data story' and any other kind of story, the data story usually wins.
+
+
+---
+
+
+# Democratising data storytelling:&lt;br&gt;Availability
+
+The first, and most basic step of democratising access to data and the ability to tell stories with data is availability. In some ways, there is a lot of progress being made on this. 
+
+&gt; ### &lt;span style="color:black"&gt;No one can tell stories with data if they can't get their hands on the data.&lt;/span&gt; 
+
+However, despite growing availability of data and resources to learn basic and even advanced data science, translating that data into a story can be a daunting and time consuming task - especially for someone who is trying to tell a story, not make data science their full time job!
+
+---
+
+class: hide_logo, middle
+
+![](images/csv.png)
+
+
+---
+
+# Democratising data storytelling:&lt;br&gt;Participation
+
+.pull-left[
+&lt;font size = 4&gt;Social research that made use of data science is actually one of the earliest progenitors of &lt;b&gt;participatory action research&lt;/b&gt;.&lt;/font&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;font size = 4&gt;W.E.B. Du Bois created data visualisations that showed the growing prosperity and strengths of the African American community at the 1900 Paris exhibition by working together with members of his community to pursue the kinds of research and data representations they wanted and felt was important. This was in opposition to the racist deficit-focused narratives they faced (Battle-Baptiste, et al. 2018).&lt;/font&gt;
+]
+
+.pull-right[![](images/image5webdb.png)]
+
+---
+
+# Democratising data storytelling:&lt;br&gt; Accessibility
+
+Just because something is **available**, or that people have been invited to **participate**, doesn't mean that what is produced is **accessible**. But what does accessible mean in this context?
+
+--
+
+&gt; Accessibility and full participation is being involved in every step, as far as possible. In data storytelling it means not just availability of data or participation in the creation of a data story. **It's about being able to ask and answer the questions that matter to you**.
+
+--
+
+**A social model of data storytelling?** What are the barriers stopping people from being able to create their own data stories and what tools do we have at our disposal to make data storytelling accessible.
+
+
+
+---
+
+## Asking our own questions; getting our own&lt;br&gt;answers.
+
+<div id="htmlwidget-3957a66d4b19ae3262f9" style="width:100%;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3957a66d4b19ae3262f9">{"x":{"diagram":"digraph {\n                  \n                  graph[layout = dot, rankdir = LR]\n                  \n                  availability[label=\"Availability\", height=1.5, width=1.5, style=\"filled\", fillcolor=\"MintCream\", color=\"White\", fontname=\"Futura\"]\n                  participation[label=\"Participation\", height=1.5, width=1.5, style=\"filled\", fillcolor=\"MintCream\", color=\"White\", fontname=\"Futura\"]\n                  accessibility[label=\"Accessibility\", height=1.5, width=1.5, style=\"filled\", fillcolor=\"MintCream\", color=\"White\", fontname=\"Futura\"]\n                  \n                  availability -> participation -> accessibility -> availability [dir = \"both\"]\n                  \n                  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+
+---
+
+# References
+
+
+
+Battle-Baptiste, W, B. Rusert, and others (2018). _WEB Du Bois's data
+portraits: Visualizing black America_. Chronicle Books.
+
+Bywaters, P. and he Child Welfare Inequalities Project Team (2020).
+_The Child Welfare Inequalities Project: Final Report_. Nuffield
+Foundation. URL:
+[https://pure.hud.ac.uk/en/publications/the-child-welfare-inequalities-project-final-report](https://pure.hud.ac.uk/en/publications/the-child-welfare-inequalities-project-final-report).
+
+Silberzahn, R, E. L. Uhlmann, D. P. Martin, et al. (2018). "Many
+analysts, one data set: Making transparent how variations in analytic
+choices affect results". In: _Advances in Methods and Practices in
+Psychological Science_ 1.3, pp. 337-356. URL:
+[https://doi.org/10.1177/2515245917747646](https://doi.org/10.1177/2515245917747646).
+
+---
+
+# References, cont.
+
+Webb, C. J. and P. Bywaters (2018). "Austerity, rationing and inequity:
+trends in children’s and young peoples’ services expenditure in England
+between 2010 and 2015". In: _Local Government Studies_ 44.3, pp.
+391-415. URL:
+[https://doi.org/10.1080/03003930.2018.1430028](https://doi.org/10.1080/03003930.2018.1430028).
+
+Webb, C, P. Bywaters, J. Scourfield, et al. (2020). "Cuts both ways:
+Ethnicity, poverty, and the social gradient in child welfare
+interventions". In: _Children and Youth Services Review_, p. 105299.
+URL:
+[https://doi.org/10.1016/j.childyouth.2020.105299](https://doi.org/10.1016/j.childyouth.2020.105299).
+
+Presentation created using `xaringan` package. Presentation and code:
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
