@@ -14,10 +14,11 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       titleSlideClass: ["left", "top", "my-title"]
+      self_contained: true
 
 ---
 
-class: bottom
+class: hide_logo, bottom
 background-image: url(images/cwip_illustration4x3.png)
 background-size: contain
 
@@ -74,12 +75,19 @@ bibliography <- ReadBib("/Users/calumwebb/Google Drive/Social Work Resources/dat
 
 # Contents
 
-### - Lorem ipsum
+### - <span style="color:black">No one wants to be average; making quantitative social research count.</span>
+
+--
+
+### - <span style="color:black">A demonstration of the Child Welfare Inequalities Project `shiny` app.</span>
+
+--
+
+### - <span style="color:black">Asking out own questions; getting out own answers. Democratising data storytelling.</span>
 
 
 ---
-
-### Children in the poorest 10 per cent of neighbourhoods are<br>more than 10 times as likely to be living in care than children in the least poor 10 per cent of neighbourhoods.
+### Children in the poorest 10 per cent of neighbourhoods<br>are more than 10 times as likely to be living in care than children in the least poor 10 per cent of neighbourhoods.
 
 ```{r bywaters2020child, echo=FALSE, warning=FALSE, out.width="100%", out.height=400, fig.cap="Data from Bywaters, et al. <a href = https://pure.hud.ac.uk/en/publications/the-child-welfare-inequalities-project-final-report>2020</a>"}
 
@@ -107,7 +115,7 @@ widgetframe::frameWidget(ratesplot)
 
 ---
 
-### There are significant ethnic inequalities in intervention rates,<br>but these are intersectional, where many groups are under-represented in the poorest neighbourhoods and over-represented in the most affluent.
+### There are significant ethnic inequalities in intervention<br>rates, but these are intersectional, where many groups are under-represented in the poorest neighbourhoods and over-represented in the most affluent.
 
 <center>
 
@@ -122,7 +130,7 @@ knitr::include_graphics("images/cla_infographic_eth.png")
 
 ---
 
-### The most deprived local authorities have seen a much larger<br>reduction in their non-safeguarding, non-children looked after expenditure as a result of austerity.
+### The most deprived local authorities have seen a much<br>larger reduction in their non-safeguarding, non-children looked after expenditure as a result of austerity.
 
 ```{r spending_plot, echo=FALSE, out.width="100%", out.height="400", fig.cap="Data from <a href=https://www.gov.uk/government/collections/section-251-materials>S251 Outturns, DfE 2011-2020</a>."}
 
@@ -211,7 +219,7 @@ Live demonstration
 
 ---
 
-# Why does everyone need access to data storytelling?
+# Why does everyone need access to<br>data storytelling?
 
 - Stories that include a data narrative are **powerful rhetorical tools**.
 
@@ -283,9 +291,9 @@ DiagrammeR::grViz("digraph {
                   
                   graph[layout = dot, rankdir = LR]
                   
-                  availability[label='Availability', height=1.5, width=1.5, style='filled', fillcolor='MintCream', color='White', fontname='Futura']
-                  participation[label='Participation', height=1.5, width=1.5, style='filled', fillcolor='MintCream', color='White', fontname='Futura']
-                  accessibility[label='Accessibility', height=1.5, width=1.5, style='filled', fillcolor='MintCream', color='White', fontname='Futura']
+                  availability[label='Availability', height=1.5, width=1.5, style='filled', fillcolor='PaleGreen', color='White', fontname='Futura']
+                  participation[label='Participation', height=1.5, width=1.5, style='filled', fillcolor='PaleGreen', color='White', fontname='Futura']
+                  accessibility[label='Accessibility', height=1.5, width=1.5, style='filled', fillcolor='PaleGreen', color='White', fontname='Futura']
                   
                   availability -> participation -> accessibility -> availability [dir = 'both']
                   
@@ -322,4 +330,4 @@ PrintBibliography(bibliography, start = 1, end = 3)
 PrintBibliography(bibliography, start = 4)
 ```
 
-Presentation created using `xaringan` package. Presentation and code: 
+Presentation created using `xaringan` package. Presentation and code: [https://github.com/cjrwebb/curiosity-data-talk](https://github.com/cjrwebb/curiosity-data-talk)
