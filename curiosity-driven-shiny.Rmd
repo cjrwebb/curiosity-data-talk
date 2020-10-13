@@ -68,6 +68,9 @@ bibliography <- ReadBib("/Users/calumwebb/Google Drive/Social Work Resources/dat
 ## .inverse[.white[Curiosity driven, accessible tools for democratising data: social work and children’s services]]
 
 ### .inverse[.white[Dr. Calum Webb]]
+
+.white[21st October 2020]
+
 .white[The University of Sheffield]
 
 
@@ -83,7 +86,7 @@ bibliography <- ReadBib("/Users/calumwebb/Google Drive/Social Work Resources/dat
 
 --
 
-### - <span style="color:black">Asking out own questions; getting out own answers. Democratising data storytelling.</span>
+### - <span style="color:black">Asking our own questions; getting our own answers. Democratising data storytelling.</span>
 
 
 ---
