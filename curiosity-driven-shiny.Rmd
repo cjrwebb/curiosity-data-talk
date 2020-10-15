@@ -110,9 +110,11 @@ cpp_plot <- cwi_rates %>%
   theme_minimal() +
   theme(plot.title = element_text(face = "bold"))
 
-ratesplot <- ggplotly(cpp_plot, tooltip = "text") %>% config(displayModeBar = F)
+ratesplot <- ggplotly(cpp_plot, tooltip = "") %>% config(displayModeBar = F)
 
-widgetframe::frameWidget(ratesplot)
+ratesplot
+
+# widgetframe::frameWidget(ratesplot) #403 errors on deployment?
 
 ```
 
@@ -163,9 +165,11 @@ spend_plot <- readr::read_rds("csc_data_spend_imd.rds") %>%
   scale_x_continuous(breaks = seq(2011, 2019, 2)) +
   theme(axis.text.x = element_text(angle = 45))
 
-spend_plot <- ggplotly(spend_plot) %>% config(displayModeBar = F)
+spend_plot <- ggplotly(spend_plot, tooltip = "") %>% config(displayModeBar = F)
 
-widgetframe::frameWidget(spend_plot)
+spend_plot
+
+# widgetframe::frameWidget(spend_plot) #403 errors on deployment
 
 ```
 
